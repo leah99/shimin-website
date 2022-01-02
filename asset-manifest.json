@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shimin-website/static/css/main.4c45f655.css",
-    "main.js": "/shimin-website/static/js/main.91075d62.js",
+    "main.js": "/shimin-website/static/js/main.639b3ed1.js",
     "static/js/787.91be25c7.chunk.js": "/shimin-website/static/js/787.91be25c7.chunk.js",
     "static/media/doggos.png": "/shimin-website/static/media/doggos.1d4424ac3321669f4ffd.png",
     "static/media/pets.png": "/shimin-website/static/media/pets.7eb5ca69280ba5afdfb0.png",
@@ -17,14 +17,14 @@
     "static/media/copyright.svg": "/shimin-website/static/media/copyright.32ac8805b9b741742b84383915335ed4.svg",
     "index.html": "/shimin-website/index.html",
     "static/media/mickey.svg": "/shimin-website/static/media/mickey.ab8a9e09353b5890ef87c3e7f7be9ce9.svg",
-    "static/media/close-quotation-mark.svg": "/shimin-website/static/media/close-quotation-mark.86799f6f821495799a91a5c67a450c7e.svg",
-    "static/media/open-quotation-mark.svg": "/shimin-website/static/media/open-quotation-mark.e22608ebb93d6580ca52a0674cc7d5d1.svg",
+    "static/media/close-quotation-mark.svg": "/shimin-website/static/media/close-quotation-mark.701d5f1bd39cebdde8099bafb5a58900.svg",
+    "static/media/open-quotation-mark.svg": "/shimin-website/static/media/open-quotation-mark.b5294401b5547967e63c5a385b7d57e9.svg",
     "main.4c45f655.css.map": "/shimin-website/static/css/main.4c45f655.css.map",
-    "main.91075d62.js.map": "/shimin-website/static/js/main.91075d62.js.map",
+    "main.639b3ed1.js.map": "/shimin-website/static/js/main.639b3ed1.js.map",
     "787.91be25c7.chunk.js.map": "/shimin-website/static/js/787.91be25c7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4c45f655.css",
-    "static/js/main.91075d62.js"
+    "static/js/main.639b3ed1.js"
   ]
 }
