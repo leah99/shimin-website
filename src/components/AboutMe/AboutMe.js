@@ -30,7 +30,7 @@ const AboutMe = () => {
                     bgHandle='#D49390'
                     fontSizeBottomFrame='15px'
                     title1="PEEKABOO!"
-                    title2='Click and Hold!'
+                    title2='Click Me!'
                     />
                 <FlipBox
                         borderColor='#C7CFC0'
@@ -65,7 +65,7 @@ const AboutMe = () => {
                                         />
                                     </ul>}
                         title1='My Hobbies'
-                        title2='Click and Hold!'
+                        title2='Click Me!'
                 />
                 <FlipBox
                     isImage

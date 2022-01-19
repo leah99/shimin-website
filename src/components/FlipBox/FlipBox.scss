@@ -52,9 +52,12 @@ $fontSizeSmall: 30px;
             font-size: $fontSize;
             color: $warmBrown;
 
-            &:active {
+            &.active {            
                 transform: perspective(1200px) rotateY(-100deg);
             }
+            // &:active {
+            //     transform: perspective(1200px) rotateY(-100deg);
+            // }
 
             @include tablet {
                 font-size: $fontSizeSmall;

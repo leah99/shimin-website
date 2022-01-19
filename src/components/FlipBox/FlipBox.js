@@ -1,15 +1,37 @@
-import React from 'react';
+import React, { useState, useRef, useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import doggos from '../../assets/doggos.png';
 import './FlipBox.scss';
 
 const FlipBox = ({ borderColor, backgroundColor, color, isImage, image, description, bgMainFrame, bgMainFrameShadow, bgInlineFrame, colorInlineFrame, bgInlineFrameShadow, fontSizeBottomFrame, bgHandle, title1, title2 }) => {
+    const [setActive, setActiveState] = useState("");
+    const toogleActiveState = (e) => {
+        setActiveState(setActive === "" ? "active" : "");
+    }
+
+    const flipBoxRef = useRef(null);
+    const handleClickOutside = useCallback(
+        (event) => {
+            if (flipBoxRef.current && !flipBoxRef.current.contains(event.target)) {
+                setActiveState("");
+            }
+        },
+    [setActiveState]
+    );
+
+    useEffect(() => {
+        document.addEventListener("click", handleClickOutside, true);
+        return () => {
+            document.removeEventListener("click", handleClickOutside, true);
+        };
+    }, [handleClickOutside]);
+
     return (
         <div className="container">
             <div className="container__flipbox" style={{ border: '5px solid', borderColor, backgroundColor: backgroundColor, color: color }}>
                 {isImage ? <img className="container__flipbox__image" src={image} alt=''/> : description}
-                <div className="container__flipbox--active">
+                <div ref={flipBoxRef} onClick={toogleActiveState} className={`container__flipbox--active ${setActive}`}>
                     <div className="container__flipbox--active__mainDoor" style={{ backgroundColor: bgMainFrame }}>
                         <div className="container__flipbox--active__mainDoor__top">
                             <div className="container__flipbox--active__mainDoor__top__div" style={{ backgroundColor: bgInlineFrame, color: colorInlineFrame }}>
